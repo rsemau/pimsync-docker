@@ -2,7 +2,7 @@
 
 # Install required packages
 apt-get update
-apt-get -y install ca-certificates curl git make libsqlite3-dev libsqlite3-0 build-essential scdoc
+apt-get -y install ca-certificates curl git make libsqlite3-dev libsqlite3-0 build-essential scdoc gettext
 
 # Install rust
 cd ~
