@@ -1,6 +1,7 @@
 FROM debian:latest
 ENV DEBIAN_FRONTEND=noninteractive
-COPY --chmod=0755 files/build.sh /build.sh
+COPY files/build.sh /build.sh
+RUN chmod +x /build.sh
 RUN /build.sh
 COPY files/entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
