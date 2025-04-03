@@ -6,5 +6,5 @@ RUN /build.sh
 COPY files/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["/usr/local/bin/pimsync","-c","/pimsync-running.conf","-v","TRACE","daemon"]
+CMD ["/usr/local/bin/pimsync","-c","/pimsync-running.conf","daemon"]
 
