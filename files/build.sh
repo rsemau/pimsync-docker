@@ -15,4 +15,6 @@ cd pimsync
 make build
 make install
 
+rustup self uninstall
+
 mkdir /status
